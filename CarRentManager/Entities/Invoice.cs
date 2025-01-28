@@ -20,8 +20,8 @@ public class Invoice
 
     public override string ToString()
     {
-        return $"Basic Payment: {BasicPayment.ToString("F2", CultureInfo.InvariantCulture)}" +
-               $"Tax: {Tax.ToString("F2", CultureInfo.InvariantCulture)}" +
-               $"Total Payment: {TotalPayment.ToString("F2", CultureInfo.InvariantCulture)}";
+        return $"Basic Payment: ${BasicPayment.ToString("F2", CultureInfo.InvariantCulture)} | " +
+               $"Tax: ${Tax.ToString("F2", CultureInfo.InvariantCulture)} | " +
+               $"Total Payment: ${TotalPayment.ToString("F2", CultureInfo.InvariantCulture)}";
     }
 }
